@@ -1,4 +1,8 @@
 @media (max-width: 992px) {
+    .bg{
+        height: 100vw;
+        background-size: auto;
+    }
     .generalWrap{
         background-size: auto;
     }
@@ -146,7 +150,7 @@
         display: none;
     }
     .girl{
-        align-self: flex-end;
+        bottom: 0;
     }
     .mainMenu.active{
         display: block;
@@ -171,6 +175,10 @@
 }
 
 @media (max-width: 500px){
+    .bg{
+        height: 100%;
+        background-size: auto;
+    }
     .leftContent ul li{
         font-size: 12px;
     }

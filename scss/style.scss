@@ -15,11 +15,22 @@ button:focus {
 strong{
     font-family: "MUSEOSANSCYRL_3";
 }
+.bg{
+    width: 100%;
+    height: 52.5vw;
+    background-image: url(../images/bg1.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    
+}
 .generalWrap{
     position: relative;
-    background-image: url(../images/bg1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    
 }
 header{
     display: flex;
@@ -181,8 +192,7 @@ box-shadow: 0px 0px 15px 0px rgba(135,135,135,0.25);
 }
 .mainContent{
    position: relative;
-   margin-left: 15vw;
-   display: flex;
+   padding-left: 15vw;
    justify-content: space-between;
    z-index: 2;
 }
@@ -250,17 +260,13 @@ box-shadow: 0px 0px 15px 0px rgba(135,135,135,0.25);
         width: 44vw;
         z-index: 1;
         position: absolute;
-        top: 17.5vw;
-        left: -16.5vw;
+        left: 21vw;
     }
     img.hint{
         width: 2vw;
         position: absolute;
-        left: .5vw;
-        top: 27vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        left: 38vw;
+        bottom: 2vw;
         animation: radial-pulse 1s infinite;
         border-radius: 50%;
         z-index: 2;
@@ -274,6 +280,9 @@ box-shadow: 0px 0px 15px 0px rgba(135,135,135,0.25);
     }
 }
 .girl{
+    position: absolute;
+    bottom: 0;
+    right: 0;
     width: 45vw;
 }
 
@@ -292,8 +301,8 @@ box-shadow: 0px 0px 15px 0px rgba(135,135,135,0.25);
     text-align: center;
     padding: 1vw;
     position: absolute;
-    left: 1.5vw;
-    top: 17.5vw;
+    left: 39vw;
+    top: -13.5vw;
     -webkit-box-shadow: .4vw -.4vw 0 -1px rgba(153,153,153,0.12);
     -moz-box-shadow: .4vw -.4vw 0 -1px rgba(153,153,153,0.12);
     box-shadow: .4vw -.4vw 0 -1px rgba(153,153,153,0.12);
@@ -303,8 +312,9 @@ box-shadow: 0px 0px 15px 0px rgba(135,135,135,0.25);
 }
 .bottomArrow{
     position: absolute;
-    bottom: -1.2vw;
-    left: 30.85vw;
+    bottom: -9vw;
+    left: 50%;
+    margin-left: -3.5vw;
     
     img{
         width: 7vw;
