@@ -42,13 +42,13 @@ $(document).ready(function () {
 
     var image = document.getElementsByClassName('thumbnail');
     new simpleParallax(image, {
-        scale: 3,
+        scale: 4,
         overflow: true
     });
 
     var image2 = document.getElementsByClassName('thumbnail2');
     new simpleParallax(image2, {
-        scale: 3,
+        scale: 4,
         overflow: true
     }); 
 
