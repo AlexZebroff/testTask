@@ -5,28 +5,42 @@
   font-family: "MUSEOSANSCYRL_0";
 }
 
+button,
+button:active,
+button:focus {
+  outline: none;
+}
+
+strong {
+  font-family: "MUSEOSANSCYRL_3";
+}
+
 .generalWrap {
   position: relative;
   background-image: url(../images/bg1.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 
 header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   font-size: 0.8vw;
-  width: 80vw;
+  width: 79vw;
   margin: 0 auto;
+  margin-bottom: 0.5vw;
+  padding-top: 0.6vw;
+  position: relative;
+  z-index: 4;
 }
 header button {
-  width: 11vw;
+  width: 12vw;
   padding: 1vw 0.8vw;
   display: flex;
   align-items: center;
   font-size: 0.8vw;
+  font-family: "MUSEOSANSCYRL_1";
   border-radius: 2vw;
   border: none;
   border-bottom: 0.2vw solid #ebeaea;
@@ -35,34 +49,110 @@ header button {
   cursor: pointer;
 }
 header button img {
-  width: 1.2vw;
+  width: 1vw;
+}
+
+p.studio {
+  margin-right: 5vw;
+  line-height: 0.9vw;
+}
+
+.hearts {
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
+  width: 100%;
+  height: 60vw;
+  top: 0;
+}
+
+.hearts img {
+  position: absolute;
+}
+
+.thumbnail {
+  width: 18vw;
+  left: 8vw;
+  top: 15vw;
+}
+
+.thumbnail2 {
+  width: 8vw;
+  right: 0;
+  top: 10vw;
+}
+
+.logo {
+  margin-right: 1.4vw;
 }
 
 .logo img {
-  width: 16vw;
+  width: 14.5vw;
 }
 
-.adress {
+.address {
   display: flex;
   align-items: center;
+  margin-right: 2vw;
+  letter-spacing: 0.06vw;
 }
-.adress img {
-  width: 6vw;
+.address img {
+  width: 5.5vw;
+  margin-right: 0.4vw;
 }
 
+.callUs {
+  margin-right: 3vw;
+}
 .callUs > div {
   display: flex;
   align-items: center;
 }
-.callUs img {
-  width: 4vw;
+
+.elipseGreen {
+  width: 0.9vw;
+  vertical-align: middle;
+}
+
+.phoneIcon, .timeIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.8vw;
+  height: 1.8vw;
+  background: #fff;
+  border-radius: 100%;
+  margin: 0.4vw;
+  box-shadow: 0px 0px 15px 0px rgba(135, 135, 135, 0.25);
+}
+.phoneIcon img, .timeIcon img {
+  width: 0.8vw;
+}
+
+.phone p a {
+  text-decoration: none;
+  padding-left: 0.4vw;
+  font-size: 1.3vw;
+  font-family: "MUSEOSANSCYRL_2";
+}
+
+.phone span {
+  font-size: 0.7vw;
+  letter-spacing: 0.02vw;
+  font-family: "MUSEOSANSCYRL_1";
+}
+
+.mapContainer {
+  margin-top: 0.7vw;
 }
 
 .lookMap {
   text-transform: uppercase;
   text-decoration: none;
   color: red;
-  border-bottom: 1px dashed red;
+  border-bottom: 0.05vw dashed red;
+  font-size: 0.7vw;
+  letter-spacing: 0.008;
 }
 
 .lookMap:hover #map {
@@ -70,50 +160,43 @@ header button img {
 }
 
 .mainMenu {
+  position: relative;
+  z-index: 2;
+}
+
+.menuList {
   display: flex;
   justify-content: space-around;
   width: 80vw;
   margin: 0 auto;
   background-color: #fff;
-  margin-bottom: 3vw;
-  box-shadow: 0px 19px 0px -11px rgba(255, 255, 255, 0.4);
+  border-radius: 0.3vw;
+  margin-bottom: 2.5vw;
+  box-shadow: 0 1.5vw 0 -1vw rgba(255, 255, 255, 0.4);
 }
 
-.mainMenu li {
+.menuList li {
   list-style: none;
   padding: 1vw;
 }
-.mainMenu li a {
+.menuList li a {
   text-decoration: none;
   font-size: 0.8vw;
 }
 
-.mainMenu li a.activeNavLink {
+.menuList li a.activeNavLink {
   font-family: "MUSEOSANSCYRL_3";
 }
 
 .mainContent {
+  position: relative;
   margin-left: 15vw;
   display: flex;
   justify-content: space-between;
+  z-index: 2;
 }
 
-.leftContent p {
-  font-size: 2vw;
-  font-family: "MUSEOSANSCYRL_3";
-  padding-top: 3vw;
-  margin-bottom: 3vw;
-}
-.leftContent ul {
-  margin-bottom: 3vw;
-  padding-left: 1vw;
-}
-.leftContent ul li {
-  font-size: 0.8vw;
-  margin-bottom: 0.2vw;
-}
-.leftContent button {
-  width: 22vw;
+.button {
   background: #f9b4b5;
   background: linear-gradient(180deg, #f9b4b5 0%, #f5a2a5 35%, #f1979b 100%);
   border: none;
@@ -121,35 +204,67 @@ header button img {
   display: flex;
   align-items: center;
   position: relative;
-  height: 6vw;
   cursor: pointer;
   border-bottom: 0.2vw solid #d7747a;
   color: #fff;
   text-transform: uppercase;
   font-size: 0.8vw;
   padding-left: 3vw;
-  box-shadow: 0px 39px 47px -29px rgba(246, 172, 173, 0.6);
+  box-shadow: 0 2.5vw 3vw -2vw rgba(245, 148, 150, 0.6);
+}
+
+.leftContent p {
+  font-size: 2.5vw;
+  padding-top: 3vw;
+  margin-bottom: 2vw;
+  font-family: "MUSEOSANSCYRL_1";
+  line-height: 2.87vw;
+}
+.leftContent ul {
+  margin-bottom: 3vw;
+  list-style-type: none;
+}
+.leftContent ul li {
+  font-size: 0.8vw;
+  display: flex;
+  align-items: center;
+}
+.leftContent ul li:before {
+  content: "";
+  display: inline-block;
+  height: 1.8vw;
+  width: 1.8vw;
+  background-size: 1.8vw;
+  background-image: url(../images/pinkDot.png);
+  background-repeat: no-repeat;
+}
+.leftContent button {
+  width: 20vw;
+  height: 4.8vw;
 }
 .leftContent button img {
-  width: 16vw;
+  width: 14vw;
   position: absolute;
-  left: 13vw;
+  left: 12vw;
 }
 
 .clientCard {
   display: flex;
   align-items: center;
   position: relative;
-  padding-left: 2vw;
 }
 .clientCard img.card {
-  width: 10vw;
+  width: 44vw;
+  z-index: 1;
+  position: absolute;
+  top: 17.5vw;
+  left: -16.5vw;
 }
 .clientCard img.hint {
-  width: 4vw;
+  width: 2vw;
   position: absolute;
-  left: 10vw;
-  top: 22vw;
+  left: 0.5vw;
+  top: 27vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -157,16 +272,23 @@ header button img {
   border-radius: 50%;
   z-index: 2;
 }
-
-.girl {
-  width: 44vw;
+.clientCard img.shadowCard {
+  position: absolute;
+  width: 30vw;
+  bottom: 4vw;
+  left: -5vw;
+  z-index: 0;
 }
 
-#map {
+.girl {
+  width: 45vw;
+}
+
+.map {
   display: none;
   position: absolute;
   top: auto;
-  z-index: 2;
+  z-index: 3;
 }
 
 .hintMessage {
@@ -178,13 +300,22 @@ header button img {
   text-align: center;
   padding: 1vw;
   position: absolute;
-  left: 12vw;
-  z-index: 1;
-  -webkit-box-shadow: 15px -17px 0px -5px rgba(153, 153, 153, 0.12);
+  left: 1.5vw;
+  top: 17.5vw;
+  box-shadow: 0.4vw -0.4vw 0 -1px rgba(153, 153, 153, 0.12);
 }
 
 .hintMessageActive {
   display: block;
+}
+
+.bottomArrow {
+  position: absolute;
+  bottom: -1.2vw;
+  left: 30.85vw;
+}
+.bottomArrow img {
+  width: 7vw;
 }
 
 @keyframes radial-pulse {
@@ -194,4 +325,121 @@ header button img {
   100% {
     box-shadow: 0 0 0 2vw rgba(0, 0, 0, 0);
   }
+}
+.popupWindow, .recievedWindow {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup {
+  position: relative;
+  width: 30vw;
+  padding: 3vw 6vw;
+  background-image: url(../images/popupBG.png);
+  border-radius: 4vw;
+  text-align: center;
+  border: 0.04vw solid #fbeeef;
+}
+.popup form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.5vw;
+}
+.popup form input, .popup form select {
+  margin-bottom: 1vw;
+  border-radius: 2vw;
+  padding: 1.5vw;
+  border: 0.04vw solid #fbeeef;
+  font-size: 1vw;
+  z-index: 1;
+}
+.popup img.plant {
+  position: absolute;
+  left: 20vw;
+  width: 10vw;
+}
+.popup img.notebook {
+  width: 15vw;
+  position: absolute;
+  right: 33vw;
+  top: 11vw;
+  z-index: 0;
+}
+.popup h2 {
+  margin-bottom: 0.8vw;
+  font-size: 1.2vw;
+}
+.popup p {
+  margin-bottom: 1vw;
+  font-size: 0.8vw;
+}
+.popup button {
+  height: 4vw;
+}
+
+.close {
+  position: absolute;
+  right: 1.5vw;
+  top: 2.5vw;
+  width: 3.5vw;
+  height: 2.5vw;
+  opacity: 0.3;
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 1.5vw;
+  width: 0.2vw;
+  background-color: #333;
+}
+
+.close:before {
+  transform: rotate(45deg);
+}
+
+.close:after {
+  transform: rotate(-45deg);
+}
+
+.recieved {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 28vw;
+  height: 16vw;
+  background-image: url(../images/popupBG.png);
+  border-radius: 2vw;
+}
+.recieved img {
+  width: 4vw;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.recieved p {
+  font-size: 1.6vw;
+}
+
+.circleDone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  border: 0.2vw solid #ef888f;
+  color: #ef888f;
+  margin-bottom: 1vw;
+  font-size: 2vw;
 }
